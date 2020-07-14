@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-Cal...</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center mb-3">Tip-Calculator</h1>
+    <div class="container w-50">
+           <div class="form-group">
+            <label>Enter Amount : </label>
+            <input type="number" id="amount" placeholder="Enter Amount" class="form-control" required>
+           </div>
+
+           <div class="form-group">
+            <label>How way your Service? : </label>
+            <select class="form-control" id="Service" required>
+              <option value="0" selected disabled>Select Option</option>
+              <option value="0.3">OutStanding</option>
+              <option value="0.2">Good</option>
+              <option value="0.15">Was OK</option>
+              <option value="0.1">Bad</option>
+              <option value="0.05">Terrible</option>
+            </select>
+           </div>
+
+           <div class="form-group">
+            <label>How Many People are Sharing The Bill ? : </label>
+            <input type="text" maxlength="2" id="pShare" 
+            placeholder="How Many People" class="form-control" required>
+           </div><br>
+
+           <button id="find" class="btn btn-info mb-3">Click Here</button>
+
+           <div class="alert alert-success alert-dismissable" id="divAlert" style="visibility: hidden;">
+            <button type="button" class="close" id="btnClose" data-dismiss="alert"
+            aria-hidden="true">
+            &times;
+            </button>
+            <h3 id="display"></h3>
+            </div>          
+      </div>
+    <script src="./app.js"></script>
+</body>
+</html>
